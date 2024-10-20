@@ -1,0 +1,784 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  cursor: pointer;
+}
+
+.header {
+  height: 90px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.img-box {
+  background-color: #9c3030;
+  width: 69px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box > img {
+  width: 40px;
+  height: 44px;
+}
+
+.logo-text-box {
+  border: 5px solid #9c3030;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.logo-text-box > p {
+  font-family: 'Sofadi One', system-ui;
+  font-size: 40px;
+  font-weight: 400;
+  color: #9c3030;
+}
+
+.lab-menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar {
+  width: 50px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.lab-name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #5b5b5b;
+}
+
+.right-side {
+  display: flex;
+}
+
+.right-side > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.notify-img {
+  width: 30px;
+  height: 28px;
+  cursor: pointer;
+}
+.profile-img {
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+  filter: opacity(75%);
+}
+
+.right-side-inv {
+  width: 25px;
+  height: 30px;
+  cursor: pointer;
+  filter: opacity(75%);
+}
+
+.right-side-name {
+  color: #5b5b5b;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.right-side-name > img {
+  width: 20px;
+  height: 12px;
+  filter: opacity(75%);
+}
+
+.main-page {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.left-section {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  flex-basis: 30%;
+  display: flex;
+  padding: 20px 15px 40px 15px;
+}
+
+.box-office-all {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.box-office {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+.box-office:last-of-type {
+  margin-bottom: 0;
+}
+
+.rod {
+  background-color: #c4c4c4;
+  width: 8px;
+  cursor: pointer;
+}
+
+.img-bx {
+  width: 25px;
+}
+
+.box-office > img:first-of-type {
+  width: 20px;
+  filter: opacity(75%);
+}
+.box-office > img:last-of-type {
+  width: 15px;
+  height: 15px;
+  filter: opacity(75%);
+}
+
+.box-office > p {
+  color: #5b5b5b;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#invent-p::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #9c3030;
+  display: block;
+}
+
+.right-section {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  flex-basis: 70%;
+  padding: 20px 20px 0 20px;
+}
+
+.drug-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blank-t {
+  font-weight: 900;
+  font-size: 20px;
+  color: #5b5b5b;
+}
+
+.right-sect-box > p {
+  color: #c4c4c4;
+  display: inline-flex;
+  font-size: 14px;
+}
+.last-p {
+  color: #5b5b5b !important;
+  font-weight: 900;
+}
+
+.right-sect-box > img {
+  width: 17px;
+  height: 17px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-flex;
+}
+
+.drug-info {
+  display: flex;
+  gap: 1px;
+  margin-top: 50px;
+}
+
+.drug-info > a:nth-of-type(5) {
+  background-color: #9c3030;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.drug-info > a {
+  background-color: unset;
+  color: #9c3030;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  border: 1px solid #9c3030;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.uni {
+  border: 1px solid #9c3030;
+  color: #9c3030;
+  font-weight: 600;
+}
+
+/*------- Table style ---------*/
+.table-box {
+  margin-top: 40px;
+  position: relative;
+}
+
+.table-box > p {
+  color: #5b5b5b;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.table-box > table {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.no-drug {
+  font-size: 14px;
+  color: #5b5b5b;
+  font-weight: 500;
+  transform: translate(45%);
+}
+
+.table-head {
+  background-color: #e7e5e5;
+}
+.table-head > th {
+  padding: 8px 15px;
+  font-size: 14px;
+  text-align: left;
+  color: #5b5b5b;
+  border-right: 2px solid #e5e5e5;
+}
+
+.table-td > td {
+  font-size: 12px;
+  color: #5b5b5b;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.last-table-td > td {
+  border-bottom: none;
+}
+
+.table-td > td:last-of-type {
+  text-align: center;
+  border-right: none;
+}
+
+.remove-btn {
+  font-size: 10px;
+  background-color: #9c3030;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+/*------- Table style End ---------*/
+.done {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 20px;
+  background-color: #9c3030;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.done > img {
+  width: 15px;
+  height: 10px;
+  margin-right: 2px;
+  filter: brightness(0) invert(1);
+}
+
+.done-box {
+  position: absolute;
+  right: 0;
+  bottom: -170px;
+  display: none;
+}
+
+.done-box > label {
+  display: block;
+  font-size: 14px;
+}
+.done-box > input {
+  width: 300px;
+  text-indent: 10px;
+  padding-block: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.done-box > button {
+  display: block;
+  margin-top: 20px;
+  background-color: #9c3030;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#one {
+  text-align: center;
+  color: #505050;
+}
+.art-d {
+  background-color: #5b5b5b;
+  color: #fff;
+  border-radius: 5px;
+  padding: 3px 5px;
+  margin-top: 3px;
+  font-size: 10px;
+  display: block;
+  width: 64px;
+}
+
+.form {
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+.form > p {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #505050;
+}
+
+.form > div {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.form > div > label {
+  display: block;
+  font-size: 13px;
+  color: #5b5b5b;
+  font-weight: 900;
+  margin-bottom: 3px;
+}
+.form > div > input {
+  height: 33px;
+  width: 190px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  background-color: #fff;
+  color: #505050;
+  border-radius: 5px;
+  text-indent: 5px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+#dose > input {
+  height: 33px;
+  width: 120px;
+}
+
+.num-sel > input {
+  width: 70px;
+  border: none;
+  outline: none;
+  text-indent: 5px;
+}
+.num-sel {
+  display: flex;
+  align-items: center;
+  height: 33px;
+  width: 130px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.select-box {
+  width: 70px;
+}
+
+#num {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  font-size: 12px;
+}
+
+#interval > select {
+  height: 33px;
+  width: 135px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+  text-indent: 5px;
+  font-size: 12px;
+  text-transform: capitalize;
+  outline: none;
+  color: #c4c4c4;
+}
+
+::placeholder {
+  color: #c4c4c4;
+}
+
+.form > button {
+  height: 33px;
+  background-color: #9c3030;
+  color: #fff;
+  border: none;
+  width: 46px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: 900;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+/*--------- Medicine Class style ----------*/
+.general-drug-box {
+  width: 190px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 5px;
+  height: 300px;
+
+  overflow-x: hidden;
+  margin-top: 10px;
+  visibility: hidden;
+}
+
+.js-drug-class,
+.js-med-name {
+  padding: 10px;
+}
+
+.drug-links,
+.med-name {
+  display: block;
+  color: #505050;
+  font-size: 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.close-box {
+  text-align: right;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.close-link,
+.med-close-link {
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 14px;
+  color: #505050;
+}
+.close-link:hover,
+.med-close-link:hover {
+  text-decoration: underline;
+}
+
+/*--------- Medicine Name style ----------*/
+.general-med-box {
+  width: 190px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 5px;
+  height: 300px;
+
+  overflow-x: hidden;
+  margin-top: 10px;
+  visibility: hidden;
+}
+.gen-close-box {
+  text-align: right;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer {
+  background-color: #fff;
+  box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.4);
+  height: 90px;
+  width: 69%;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-blk {
+  display: inline-block;
+  margin-right: 10px;
+}
+.second-blk {
+  display: inline-block;
+}
+
+.first-blk > p {
+  font-weight: 900;
+  color: #5b5b5b;
+  font-size: 14px;
+}
+.second-blk > a {
+  font-weight: 900;
+  color: #5b5b5b;
+  text-decoration: none;
+  font-size: 14px;
+}
+.second-blk > a:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    padding: 20px;
+  }
+
+  .logo-text-box > p {
+    font-size: 20px;
+  }
+
+  .logo-container {
+    margin-right: 20px;
+  }
+
+  .menu-bar {
+    margin-right: 20px;
+  }
+
+  .lab-name {
+    font-size: 20px;
+  }
+
+  .notify-img {
+    width: 30px;
+  }
+
+  .profile-img {
+    width: 35px;
+  }
+
+  .right-side-name {
+    font-size: 17px;
+    gap: 5px;
+  }
+
+  .box-office > img:first-of-type {
+    width: 22px;
+  }
+
+  .box-office > img:last-of-type {
+    height: 16px;
+  }
+
+  .box-office > p {
+    font-size: 17px;
+  }
+
+  .blank-t {
+    font-size: 20px;
+  }
+
+  .right-sect-box > img {
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .right-sect-box > p {
+    font-size: 15px;
+  }
+
+  .footer {
+    height: 100%;
+  }
+
+  .first-blk > p {
+    font-size: 14px;
+  }
+
+  .second-blk > a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header {
+    padding: 15px;
+  }
+
+  .logo-container {
+    margin-right: 15px;
+  }
+
+  .img-box {
+    width: 45px;
+  }
+
+  .img-box > img {
+    width: 25px;
+    height: 32px;
+  }
+
+  .logo-text-box {
+    height: 50px;
+    padding: 4px;
+  }
+
+  .logo-text-box > p {
+    font-size: 18px;
+  }
+
+  .lab-menu {
+    flex-direction: row-reverse;
+  }
+
+  .menu-bar {
+    width: 30px;
+  }
+
+  .lab-name {
+    font-size: 18px;
+    margin-right: 20px;
+  }
+
+  .right-side {
+    background-color: #fff;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 85px;
+    right: 0;
+    left: 0;
+    transition: height 1s;
+    overflow: hidden;
+  }
+
+  .showMenu {
+    height: 200px;
+  }
+
+  .right-side > div {
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+  }
+
+  .notify-img {
+    margin-top: 30px;
+  }
+
+  .main-page {
+    flex-direction: column;
+  }
+
+  .left-section {
+    height: 100%;
+    flex-basis: 100%;
+  }
+
+  .box-office > img:first-of-type {
+    width: 20px;
+  }
+  .box-office > img:last-of-type {
+    height: 14px;
+  }
+
+  .box-office > p {
+    font-size: 16px;
+  }
+
+  .right-section {
+    height: 100%;
+    flex-basis: 100%;
+    padding: 20px;
+  }
+
+  .blank-t {
+    font-size: 18px;
+  }
+
+  .right-sect-box > p {
+    font-size: 15px;
+  }
+
+  .footer {
+    width: 100%;
+    float: unset;
+    padding: 20px;
+    height: 100%;
+  }
+
+  .first-blk > p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .second-blk > a {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
